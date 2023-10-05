@@ -8,11 +8,11 @@ function setup(){
     const spaceX = new SpaceX();
     spaceX.launches().then(data=>{
         const listContainer = document.getElementById("listContainer")
-        RenderLaunches(data, listContainer);
+        renderLaunches(data, listContainer);
         drawMap();
     })
 }
-function RenderLaunches(launches, container){
+function renderLaunches(launches, container){
     const list = document.createElement("ul");
     launches.forEach(launch=>{
         const item = document.createElement("li");
