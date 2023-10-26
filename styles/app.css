@@ -9,6 +9,11 @@
 .content {
     flex-grow: 0.7;
 }
+
+.dots{
+    opacity: 0.7;
+}
+
 #listContainer{
     height: 300px;
     overflow: hidden;
